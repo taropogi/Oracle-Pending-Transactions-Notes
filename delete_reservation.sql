@@ -27,7 +27,7 @@ DELETE FROM MTL_RESERVATIONS WHERE
 
 DELETE FROM MTL_DEMAND WHERE
     DEMAND_SOURCE_TYPE IN (2,8) -- 2= Sales Order, 8= Internal Sales Order
-AND RESERVATION_TYPE=2      
+AND RESERVATION_TYPE=2      -- 2 means sales order reservation, please verify in your system
 AND DEMAND_SOURCE_LINE = l_lin_id;
 
 COMMIT;
