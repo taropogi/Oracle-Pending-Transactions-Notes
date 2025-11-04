@@ -5,7 +5,7 @@ Key Steps:
 Line 83
 User Input: Prompts the user to enter the LINE_ID of the order line to process.
 
-Validation:
+Validation, Line 86-93:
 Checks if the order line is actually cancelled.
 Ensures the line does not belong to a WMS organization or have OTM integration enabled.
 
