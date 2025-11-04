@@ -26,5 +26,6 @@ When to Use
 When a delivery detail is stuck in a pending state due to a cancelled order line.
 When automated cancellation or cleanup processes have failed.
 As a support/maintenance tool for data correction in Oracle EBS Shipping.
+
 In summary:
 This script is a corrective tool to manually cancel and clean up delivery details in Oracle EBS Shipping, ensuring that stuck or pending shipment lines are properly marked as cancelled and do not interfere with further processing.
