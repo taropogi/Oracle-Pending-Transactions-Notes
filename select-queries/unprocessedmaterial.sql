@@ -21,7 +21,10 @@ select
 from
     mtl_material_transactions_temp
 where
-    process_flag = 'E'
+    (
+        process_flag = 'E'
+        or transaction_status IS NULL -- added by me
+    )
     and organization_id = 121
 order by
     transaction_date

@@ -16,6 +16,6 @@ select
 from
     mtl_transactions_interface
 where
-    process_flag = 3
+    process_flag in (1, 2, 3) --added 2 and 3
 order by
     transaction_date
